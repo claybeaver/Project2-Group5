@@ -1,0 +1,49 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+Hurricane
+-
+Event_ID PK int FK >- Hurricane_timeseries.Event_ID
+Name string INDEX
+Category string FK >- Categories.Category_name
+State_name string FK >- States.State_name
+Fatality integer FK >- Fatalities.Event_ID
+Cities string
+
+Hurricane_timeseries
+-
+Event_ID
+Name
+Timestamp
+Pressure
+Latitude
+Longitude
+
+
+Categories
+-
+Category_ID
+Category_name
+
+
+Cost
+-
+Event_ID int FK >- Hurricane.Event_ID
+Cost
+
+
+States as ol
+----
+State_name PK int
+State_ID int
+
+Cities
+----
+City_ID FK >-< Hurricane.Cities
+City_name
+
+Fatalities as ol
+----
+Event_ID PK int
+Fatality_num int
