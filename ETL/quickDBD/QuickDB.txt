@@ -20,6 +20,10 @@ Pressure
 Latitude
 Longitude
 
+ACE
+-
+Event_ID FK >- Hurricane.Event_ID
+ACE integer
 
 Categories
 -
