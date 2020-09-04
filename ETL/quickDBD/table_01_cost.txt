@@ -2,10 +2,32 @@
 # To reset the sample schema, replace everything with
 # two dots ('..' - without quotes).
 
-Cost
+cost
 -
-name VARCHAR(50)
-norm_damage_usd INT
+hurricane_id INT
+name VARCHAR(255)
+damage_usd numeric
+norm_damage_usd numeric
 year INT
-category INT
-states VARCHAR(50)
+
+fatalities
+-
+hurricane_id INT
+name VARCHAR(255)
+year INT
+deaths INT
+
+hurricanes
+-
+hurricane_id INT
+date INT
+name VARCHAR(255)
+time INT
+status VARCHAR(255)
+latitude VARCHAR(255)
+longitude VARCHAR(255)
+max_wind INT
+air_pressure INT
+latitude_decimal numeric
+longitude_decimal numeric
+year INT
