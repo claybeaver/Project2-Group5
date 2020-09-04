@@ -1,0 +1,62 @@
+,name,damage_usd,norm_damage_usd,year,category,states
+0,Katrina,$125.0,116.9,2005,Category 5 hurricane,Louisiana Mississippi The Bahamas United States Gulf Coast South Florida Northeast Eastern Canada
+1,Harvey,$125.0,62.2,2017,Category 4 hurricane,Texas Louisiana South America Central America The Caribbean Yucatan Peninsula
+2,Maria,$90.0,,2017,Category 5 hurricane,Puerto Rico Lesser Antilles Greater Antilles Caribbean Sea Eastern United States
+3,Irma,$77.2,31.0,2017,Category 5 hurricane,Lesser Antilles Greater Antilles Caribbean Sea Eastern United States
+4,Sandy,$68.7,73.5,2012,Category 3 hurricane,The Caribbean United States East Coast Eastern Canada
+5,Ike,$38.0,35.2,2008,Category 4 hurricane,Greater Antilles Texas Louisiana Midwestern United States Eastern Canada Iceland
+6,Wilma,$27.4,31.9,2005,Category 5 hurricane,Greater Antilles Central America Florida
+7,Andrew,$27.3,106.0,1992,Category 5 hurricane,The Bahamas Florida Louisiana
+8,Ivan,$26.1,25.9,2004,Category 5 hurricane,The Caribbean Venezuela United States Gulf Coast
+9,Michael,$25.1,,2018,Category 5 hurricane,Central America Florida Georgia United States Gulf Coast Eastern United States Eastern Canada Iberian Peninsula
+10,Florence,$24.2,,2018,Category 4 hurricane,West Africa Cape Verde Bermuda Eastern United States Atlantic Canada
+11,Rita,$18.5,14.9,2005,Category 5 hurricane,Cuba Texas Louisiana
+12,Charley,$16.9,26.9,2004,Category 4 hurricane,Jamaica Cayman Islands Cuba Florida The Carolinas
+13,Matthew,$16.5,8.6,2016,Category 5 hurricane,Colombia Venezuela The Caribbean United States East Coast
+14,Irene,$14.2,10.8,2011,Category 3 hurricane,The Caribbean United States East Coast Eastern Canada
+15,Georges,$13.9,<6.0,1998,Category 4 hurricane,The Caribbean United States Gulf Coast
+16,Frances,$10.1,16.5,2004,Category 4 hurricane,The Caribbean Eastern United States Ontario
+17,Hugo,$9.47,25.1,1989,Category 5 hurricane,The Caribbean United States East Coast
+18,Laura,$8.9,,2020,Category 4 hurricane,Leeward Islands Puerto Rico Dominican Republic Haiti Cuba Southeastern United States
+19,Allison,$8.5,<6.0,2001,Tropical storm,Texas Louisiana Southern United States
+20,Gustav,$8.31,<6.0,2008,Category 4 hurricane,Hispaniola Jamaica Cuba Louisiana
+21,Jeanne,$7.94,13.6,2004,Category 3 hurricane,The Caribbean Eastern United States
+22,Floyd,$6.5,13.9,1999,Category 4 hurricane,The Bahamas Eastern United States Atlantic Canada
+23,Mitch,$6.08,<6.0,1998,Category 5 hurricane,Central America Yucatán Peninsula South Florida
+24,Isabel,$5.5,<6.0,2003,Category 5 hurricane,Greater Antilles The Bahamas Eastern United States Ontario
+25,Dorian,$5.07,,2019,Category 5 hurricane,The Caribbean The Bahamas Eastern United States Atlantic Canada
+26,Imelda,$5.0,,2019,Tropical storm,Texas Louisiana Oklahoma Arkansas
+27,Fran,$5.0,11.1,1996,Category 3 hurricane,Eastern United States Ontario
+28,Opal,$4.7,10.0,1995,Category 4 hurricane,Guatemala Yucatán Peninsula Eastern United States
+29,Isaias,$4.2,,2020,Category 1 hurricane,Puerto Rico Dominican Republic Haiti Bahamas Eastern United States
+30,Stan,$3.96,<6.0,2005,Category 1 hurricane,Mexico Central America
+31,Karl,$3.9,<6.0,2010,Category 3 hurricane,Mexico Central America
+32,Dennis,$3.98,<6.0,2005,Category 4 hurricane,Greater Antilles Southeastern United States
+33,Isaac,$3.11,<6.0,2012,Category 1 hurricane,The Caribbean Eastern United States
+34,Alicia,$3.0,13.6,1983,Category 3 hurricane,East Texas Louisiana
+35,Gilbert,$2.98,<6.0,1988,Category 5 hurricane,Venezuela Central America Hispaniola Mexico
+36,Luis,$2.97,<6.0,1995,Category 4 hurricane,Leeward Islands Puerto Rico Bermuda
+37,Lee,$2.8,<6.0,2011,Tropical storm,Louisiana Mississippi
+38,Michelle,$2.35,<6.0,2001,Category 4 hurricane,Central America Jamaica Cuba The Bahamas
+39,Marilyn,$2.1,<6.0,1995,Category 3 hurricane,The Caribbean Bermuda
+40,Agnes,$2.1,26.0,1972,Category 1 hurricane,Mexico Cuba Eastern United States
+41,Dean,$1.95,<6.0,2007,Category 5 hurricane,The Caribbean Central America
+42,Joan,$1.87,<6.0,1988,Category 4 hurricane,Lesser Antilles Colombia Venezuela Central America
+43,Fifi,$1.8,<6.0,1974,Category 2 hurricane,Jamaica Central America Mexico
+44,Frederic,$1.77,<6.0,1979,Category 4 hurricane,The Caribbean Southeastern United States
+45,Dolly,$1.6,<6.0,2008,Category 2 hurricane,Cayman Islands Mexico Southwestern United States
+46,Allen,$1.57,<6.0,1980,Category 5 hurricane,The Caribbean Yucatán Peninsula Mexico South Texas
+47,David,$1.54,<6.0,1979,Category 5 hurricane,The Caribbean United States East Coast
+48,Alex,$1.52,<6.0,2010,Category 2 hurricane,Central America Greater Antilles Texas
+49,Juan,$1.5,<6.0,1985,Category 1 hurricane,United States Gulf Coast
+50,Bob,$1.5,<6.0,1991,Category 3 hurricane,United States East Coast Canada
+51,Roxanne,$1.5,<6.0,1995,Category 3 hurricane,Mexico
+52,Ingrid,$1.5,<6.0,2013,Category 1 hurricane,Mexico
+53,Betsy,$1.42,<6.0,1965,Category 4 hurricane,Louisiana South Florida Caribbean
+54,Camille,$1.42,26.4,1969,Category 5 hurricane,Mississippi Louisiana Alabama Virginia Cuba
+55,Elena,$1.3,<6.0,1985,Category 3 hurricane,Cuba United States Gulf Coast
+56,Isidore,$1.28,<6.0,2002,Category 3 hurricane,Cuba Yucatán Peninsula Louisiana
+57,Lili,$1.16,<6.0,2002,Category 4 hurricane,Lesser Antilles Greater Antilles Gulf Coast of the United States
+58,Alberto,$1.03,<6.0,1994,Tropical storm,Southeastern United States
+59,Emily,$1.01,<6.0,2005,Category 5 hurricane,The Caribbean Honduras Belize Mexico Texas
+60,Bonnie,$1.0,<6.0,1998,Category 3 hurricane,Lesser Antilles East Coast of the United States

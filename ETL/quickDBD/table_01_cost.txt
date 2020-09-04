@@ -1,0 +1,11 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+Cost
+-
+name VARCHAR(50)
+norm_damage_usd INT
+year INT
+category INT
+states VARCHAR(50)
