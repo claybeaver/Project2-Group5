@@ -6,11 +6,11 @@
 -- two dots ('..' - without quotes).
 
 CREATE TABLE "Cost" (
+    "hurricane_id" INT   NOT NULL,
     "name" VARCHAR(255)   NOT NULL,
+    "damage_usd" INT   NOT NULL,
     "norm_damage_usd" INT   NOT NULL,
     "year" INT   NOT NULL,
-    "category" VARCHAR(255)   NOT NULL,
-    "states" VARCHAR(255)   NOT NULL,
-    "damage_usd_int" INT   NOT NULL
+    "category" VARCHAR(255)   NOT NULL
 );
 
