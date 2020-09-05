@@ -2,52 +2,47 @@
 # To reset the sample schema, replace everything with
 # two dots ('..' - without quotes).
 
-Hurricane
+cost
 -
-Event_ID PK int FK >- Hurricane_timeseries.Event_ID
-Name string INDEX
-Category string FK >- Categories.Category_name
-State_name string FK >- States.State_name
-Fatality integer FK >- Fatalities.Event_ID
-Cities string
+hurricane_id INT
+name VARCHAR(255)
+damage_usd numeric
+norm_damage_usd numeric
+year INT
 
-Hurricane_timeseries
+fatalities
 -
-Event_ID
-Name
-Timestamp
-Pressure
-Latitude
-Longitude
+hurricane_id INT
+name VARCHAR(255)
+year INT
+deaths INT
 
-ACE
+hurricanes
 -
-Event_ID FK >- Hurricane.Event_ID
-ACE integer
+hurricane_id INT
+date INT
+name VARCHAR(255)
+time INT
+status VARCHAR(255)
+latitude VARCHAR(255)
+longitude VARCHAR(255)
+max_wind INT
+air_pressure INT
+latitude_decimal numeric
+longitude_decimal numeric
+year INT
 
-Categories
+master
 -
-Category_ID
-Category_name
-
-
-Cost
--
-Event_ID int FK >- Hurricane.Event_ID
-Cost
-
-
-States as ol
-----
-State_name PK int
-State_ID int
-
-Cities
-----
-City_ID FK >-< Hurricane.Cities
-City_name
-
-Fatalities as ol
-----
-Event_ID PK int
-Fatality_num int
+date INT
+name VARCHAR(255)
+time INT
+status VARCHAR(25)
+latitude VARCHAR(255)
+longitude VARCHAR(255)
+max_wind INT
+air_pressure INT
+latitude_decimal numeric
+longitude_decimal numeric
+year INT
+hurricane_id INT
