@@ -7,6 +7,10 @@ from flask import (
     jsonify,
     request,
     redirect)
+from secret import password2
+from secret import password
+import pandas as pd
+from sqlalchemy import create_engine
 
 #################################################
 # Flask Setup
@@ -26,6 +30,15 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 Pet = create_classes(db)
+
+#### test irina
+
+engine = create_engine(f"postgresql://postgres:{password}@localhost:5432/hurricanes_db")
+connection = engine.connect()
+# Read master table into dataframe
+master_df = pd.read_sql_table("master", con=engine)
+x = master_df['']
+##### end test irina
 
 # create route that renders index.html template
 @app.route("/")

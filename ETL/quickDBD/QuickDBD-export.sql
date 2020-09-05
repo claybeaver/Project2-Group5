@@ -1,4 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 -- Modify this code to update the DB schema diagram.
@@ -50,3 +50,12 @@ CREATE TABLE "master" (
     "hurricane_id" INT   NOT NULL
 );
 
+select * from hurricanes;
+select * from cost;
+select * from master;
+select * from fatalities;
+
+drop table hurricanes;
+drop table cost;
+drop table master;
+drop table fatalities;
