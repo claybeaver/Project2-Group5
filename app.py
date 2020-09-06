@@ -47,7 +47,7 @@ Classes = create_classes(db)
 def jsondata():
     # cursor.execute("select row_to_json(master) from master")
     # rows = cursor.fetchall()
-    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
+    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure, time from master")
     rows = cursor.fetchall()
     # print(rows)
     # q = ("select row_to_json(master) from master")
@@ -64,6 +64,7 @@ def jsondata():
         d['longitude'] = str(row[4])
         d['max_wind'] = row[5]
         d['air_pressure'] = row[6]
+        d['time'] = row[7]
         objects_list.append(d)
 
     j = json.dumps(objects_list)
@@ -76,7 +77,7 @@ def jsondata():
 # create route that renders index.html template
 @app.route("/")
 def home():
-    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
+    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure, time from master")
     rows = cursor.fetchall()
     objects_list = []
     for row in rows:
@@ -88,6 +89,7 @@ def home():
         d['longitude'] = str(row[4])
         d['max_wind'] = row[5]
         d['air_pressure'] = row[6]
+        d['time'] = row[7]
         objects_list.append(d)
 
     j = json.dumps(objects_list)
