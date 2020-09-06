@@ -50,10 +50,17 @@ CREATE TABLE "master" (
     "hurricane_id" INT   NOT NULL
 );
 
+CREATE TABLE "maxwinds" (
+    "name" VARCHAR(255)   NOT NULL,
+    "max_wind" INT   NOT NULL,
+    "name_year" VARCHAR(255)   NOT NULL
+);
+
 select * from hurricanes;
 select * from cost;
-select * from master;
+select name from master where master.name = 'Able';
 select * from fatalities;
+select * from maxwinds;
 
 drop table hurricanes;
 drop table cost;

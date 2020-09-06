@@ -1,26 +1,20 @@
 function buildGraph(sample) {
-  const url = "/jsondata";
+  const url = "/maxwinds";
   d3.json(url).then(function(data){
     console.log(data);
-    const names = data.map(entry => entry.name);
+    const names = data.map(entry => entry.name_year);
     const maxwind = data.map(entry => entry.max_wind);
     console.log(names);
     console.log(maxwind);    
-
-    console.log(Math.max(maxwind));
-    
-    // data.forEach((entry, i) => {
-    //   console.log(entry.name);
-    // })
-
+ 
     const title = `Maximum winds`;
     const trace = {
-      x: names,
-      y: maxwind,
+      x: maxwind,
+      y: names,
       type: 'bar',
       orientation: 'h',
       title: title,
-      text: names,
+      text: maxwind,
     };
     var data = [trace];
     var layout = {
@@ -34,7 +28,7 @@ function buildGraph(sample) {
         size: 8,
       },
       xaxis: { title: "Maximum winds" },
-      yaxis: maxwind,
+      // yaxis: maxwind,
       width: 400,
       margin: {
         l: 100,

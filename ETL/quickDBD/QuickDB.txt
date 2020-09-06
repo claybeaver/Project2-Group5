@@ -46,3 +46,9 @@ latitude_decimal numeric
 longitude_decimal numeric
 year INT
 hurricane_id INT
+
+maxwinds
+-
+name VARCHAR(255)
+max_wind INT
+name_year VARCHAR(255)
