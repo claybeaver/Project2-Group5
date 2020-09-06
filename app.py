@@ -12,6 +12,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import psycopg2
 import json
+import collections
 #################################################
 # Flask Setup
 #################################################
@@ -43,20 +44,31 @@ Classes = create_classes(db)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
-    # result = cursor.fetchall()
-    # result = cursor.query.with_entities(SomeModel.col1, SomeModel.col2)
-    columns = ('name', 'hurricane_id','year', 'latitude_decimal', 'longitude_decimal', 'max_wind', 'air_pressure')
-    results = []
-    for row in cursor.fetchall():
-        results.append(dict(zip(columns, row)))
-    # results = db.session.query(Classes.name, Classes.hurricane_id, latitude_decimal, longitude_decimal).all()
-    # hover_text = [result[0] for result in results]
-    # master = 
-    # name = [result[1] for result in results]
-    # hurricane_id = [result[2] for result in results]
-    # lat = [result[3] for result in results]
-    # lon = [result[4] for result in results]
+    cursor.execute("select row_to_json(master) from master")
+    rows = cursor.fetchall()
+    print(rows)
+    results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
+    # rows = cursor.fetchall()
+    # 
+    # cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
+    # rows = cursor.fetchall()
+    # objects_list = []
+    # for row in rows:
+    #     d = collections.OrderedDict()
+    #     d['name'] = row[0]
+    #     d['hurricane_id'] = row[1]
+    #     d['year'] = row[2]
+    #     d['latitude'] = str(row[3])
+    #     d['longitude'] = str(row[4])
+    #     d['max_wind'] = row[5]
+    #     d['air_pressure'] = row[6]
+    #     objects_list.append(d)
+    #     j = json.dumps(objects_list)
+    #     objects_file = 'master_objects.js'
+    #     f = open(objects_file,'w')
+    # print(f, j)
+    
+# conn.close()
 
     # hurricanes_data = [{
     # "type": "scattergeo",
@@ -74,7 +86,7 @@ def home():
     # }
     # }]
     # return jsonify(hurricanes_data)
-    return render_template("index.html", data=results)
+    return render_template("index.html", data=rows)
     # return render_template("index.html")
 
 # create route that renders index.html template
