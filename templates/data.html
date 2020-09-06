@@ -14,7 +14,49 @@
         <div class="jumbotron" style="text-align: center">
             <h1>Atlantic Hurricanes</h1></div>
                 <div>
-                    {{results}}
+                    <table> 
+                        <thead>Hurricane master data
+                            <tr>
+                                <th colspan="1">Name</th>
+                                <th colspan="1">Hurricane id</th>
+                                <th colspan="1">Year</th>
+                                <th colspan="1">Time</th>
+                                <th colspan="1">Status</th>
+                                <th colspan="1">Lat Decimal</th>
+                                <th colspan="1">Long Decimal</th>
+                                <th colspan="1">Max Wind</th>
+                                <th colspan="1">Air Pressure</th>
+                               
+                                
+                            </tr>
+                        </thead>
+                        
+                        <tbody>{% for row in data %}
+                            <tr>
+                                <td>{{ row[1] }}
+                                </td>
+                                <td>{{ row[11] }}
+                                </td>
+                                <td>{{ row[10] }}
+                                </td>
+                                <td>{{ row[2] }}
+                                </td>
+                                <td>{{ row[3] }}
+                                </td>
+                                <td>{{ row[8] }}
+                                </td>
+                                <td>{{ row[9] }}
+                                </td>
+                                <td>{{ row[6] }}
+                                </td>
+                                <td>{{ row[7] }}
+                                </td>
+
+                            </tr>{% endfor %}
+                        </tbody>
+                        
+                    </table>
+                    
                 </div>
             <p>Find out more</p>
         
