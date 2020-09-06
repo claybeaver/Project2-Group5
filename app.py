@@ -13,6 +13,7 @@ from sqlalchemy import create_engine
 import psycopg2
 import json
 import collections
+import sys
 #################################################
 # Flask Setup
 #################################################
@@ -42,53 +43,60 @@ db = SQLAlchemy(app)
 Classes = create_classes(db)
 
 # create route that renders index.html template
+@app.route("/jsondata")
+def jsondata():
+    # cursor.execute("select row_to_json(master) from master")
+    # rows = cursor.fetchall()
+    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
+    rows = cursor.fetchall()
+    # print(rows)
+    # q = ("select row_to_json(master) from master")
+    # mySQL = db.executesql(q)
+    # return json.dumps(mySQL)
+    # # return 
+    objects_list = []
+    for row in rows:
+        d = collections.OrderedDict()
+        d['name'] = row[0]
+        d['hurricane_id'] = row[1]
+        d['year'] = row[2]
+        d['latitude'] = str(row[3])
+        d['longitude'] = str(row[4])
+        d['max_wind'] = row[5]
+        d['air_pressure'] = row[6]
+        objects_list.append(d)
+
+    j = json.dumps(objects_list)
+    objects_file = 'master_objects.js'
+    f = open(objects_file,'w')
+    print(f, j)
+    # return render_template("jsondata.html", data=j)    
+    return j
+
+# create route that renders index.html template
 @app.route("/")
 def home():
-    cursor.execute("select row_to_json(master) from master")
+    cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
     rows = cursor.fetchall()
-    print(rows)
-    results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
-    # rows = cursor.fetchall()
-    # 
-    # cursor.execute("select name, hurricane_id, year, latitude_decimal, longitude_decimal, max_wind, air_pressure from master")
-    # rows = cursor.fetchall()
-    # objects_list = []
-    # for row in rows:
-    #     d = collections.OrderedDict()
-    #     d['name'] = row[0]
-    #     d['hurricane_id'] = row[1]
-    #     d['year'] = row[2]
-    #     d['latitude'] = str(row[3])
-    #     d['longitude'] = str(row[4])
-    #     d['max_wind'] = row[5]
-    #     d['air_pressure'] = row[6]
-    #     objects_list.append(d)
-    #     j = json.dumps(objects_list)
-    #     objects_file = 'master_objects.js'
-    #     f = open(objects_file,'w')
+    objects_list = []
+    for row in rows:
+        d = collections.OrderedDict()
+        d['name'] = row[0]
+        d['hurricane_id'] = row[1]
+        d['year'] = row[2]
+        d['latitude'] = str(row[3])
+        d['longitude'] = str(row[4])
+        d['max_wind'] = row[5]
+        d['air_pressure'] = row[6]
+        objects_list.append(d)
+
+    j = json.dumps(objects_list)
+    objects_file = 'master_objects.js'
+    f = open(objects_file,'w')
     # print(f, j)
-    
-# conn.close()
-
-    # hurricanes_data = [{
-    # "type": "scattergeo",
-    # "locationmode": "USA-states",
-    # "lat": lat,
-    # "lon": lon,
-    # "text": name,
-    # "hoverinfo": "text",
-    # "marker": {
-    #     "size": 50,
-    #     "line": {
-    #         "color": "rgb(8,8,8)",
-    #         "width": 1
-    #     },
-    # }
-    # }]
-    # return jsonify(hurricanes_data)
-    return render_template("index.html", data=rows)
-    # return render_template("index.html")
-
+    return render_template("index.html", data=j)
+    # return j
+  
 # create route that renders index.html template
 @app.route("/data")
 def data():
