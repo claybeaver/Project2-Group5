@@ -58,11 +58,14 @@ CREATE TABLE "maxwinds" (
 
 select * from hurricanes;
 select * from cost;
+select * from master;
 select name from master where master.name = 'Able';
 select * from fatalities;
 select * from maxwinds;
+select * from cost where damage_usd < 0;
 
 drop table hurricanes;
 drop table cost;
 drop table master;
 drop table fatalities;
+drop table maxwinds;

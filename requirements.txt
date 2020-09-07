@@ -1,5 +1,117 @@
-Flask>=1.1.1
-Jinja2>=2.10.3
-SQLAlchemy>=1.3.11
-gunicorn>=20.0.0
-flask_sqlalchemy>=2.0.0
+appnope==0.1.0
+astroid @ file:///opt/concourse/worker/volumes/live/21fd14a9-2a7e-484b-7394-5a9912cdcf80/volume/astroid_1592498459180/work
+attrs==19.3.0
+backcall==0.2.0
+beautifulsoup4 @ file:///Users/runner/miniforge3/conda-bld/beautifulsoup4_1589760920330/work
+bleach==3.1.5
+blinker==1.4
+brotlipy==0.7.0
+census==0.8.14
+certifi==2020.6.20
+cffi==1.14.0
+chardet==3.0.4
+citipy==0.0.5
+click==7.1.2
+conda==4.8.3
+conda-package-handling==1.7.0+0.g7c4a471.dirty
+cryptography==2.9.2
+cycler==0.10.0
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+et-xmlfile==1.0.1
+Flask==1.1.2
+Flask-PyMongo==2.3.0
+Flask-SQLAlchemy @ file:///home/conda/feedstock_root/build_artifacts/flask-sqlalchemy_1594747318500/work
+future==0.18.2
+geojson==2.5.0
+gmaps==0.9.0
+html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+importlib-metadata @ file:///opt/concourse/worker/volumes/live/290b74d5-e5f3-47ff-7257-17b3c9ccecab/volume/importlib-metadata_1593446478206/work
+ipykernel==5.3.0
+ipython @ file:///opt/concourse/worker/volumes/live/41e43e2f-bbbe-4c76-44fb-a6de0e826dd8/volume/ipython_1593447396701/work
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+isort==4.3.21
+itsdangerous==1.1.0
+jdcal==1.4.1
+jedi @ file:///opt/concourse/worker/volumes/live/1c5c293b-9147-4b4b-5a7f-d3f5eddb8470/volume/jedi_1592841952519/work
+Jinja2==2.11.2
+joblib==0.15.1
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==6.1.3
+jupyter-console==6.1.0
+jupyter-core==4.6.3
+kdtree==0.16
+kiwisolver==1.2.0
+lazy-object-proxy==1.4.3
+lxml @ file:///Users/runner/miniforge3/conda-bld/lxml_1594322709119/work
+MarkupSafe==1.1.1
+matplotlib==3.1.3
+mccabe==0.6.1
+mistune==0.8.4
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nb-conda-kernels==2.2.3
+nbconvert==5.6.1
+nbformat==5.0.7
+notebook==6.0.3
+numpy==1.18.5
+oauthlib==3.0.1
+openpyxl==3.0.3
+packaging==20.4
+pandas @ file:///opt/concourse/worker/volumes/live/5ef6147e-ea92-446e-4065-0c8c7435293f/volume/pandas_1592841676717/work
+pandocfilters==1.4.2
+parso==0.7.0
+pendulum==2.1.0
+pexpect==4.8.0
+pickleshare==0.7.5
+prometheus-client==0.8.0
+prompt-toolkit==3.0.5
+psycopg2==2.8.4
+ptyprocess==0.6.0
+pycosat==0.6.3
+pycparser==2.20
+Pygments==2.6.1
+PyJWT==1.7.1
+pylint @ file:///opt/concourse/worker/volumes/live/0a2a544e-806a-4267-74b2-a3f95578c3f2/volume/pylint_1592498630326/work
+pymongo==3.10.1
+pyOpenSSL==19.1.0
+pyparsing==2.4.7
+pyrsistent==0.16.0
+PySocks==1.7.1
+python-dateutil==2.8.1
+pytz==2020.1
+pytzdata==2019.3
+pyzmq==19.0.1
+qtconsole @ file:///tmp/build/80754af9/qtconsole_1592848611704/work
+QtPy==1.9.0
+requests==2.23.0
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1595492159598/work
+ruamel-yaml==0.15.87
+scikit-learn==0.22.1
+scipy==1.4.1
+seaborn==0.10.1
+selenium==3.141.0
+Send2Trash==1.5.0
+six==1.15.0
+soupsieve @ file:///Users/runner/miniforge3/conda-bld/soupsieve_1589778516085/work
+splinter==0.13.0
+SQLAlchemy @ file:///Users/runner/miniforge3/conda-bld/sqlalchemy_1597701942383/work
+terminado==0.8.3
+testpath==0.4.4
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+tornado==6.0.4
+tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work
+traitlets==4.3.3
+tweepy @ file:///home/conda/feedstock_root/build_artifacts/tweepy_1594498408379/work
+urllib3==1.25.9
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+wrapt==1.11.2
+zipp==3.1.0
