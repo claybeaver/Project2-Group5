@@ -1,4 +1,4 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 -- Modify this code to update the DB schema diagram.
@@ -56,16 +56,8 @@ CREATE TABLE "maxwinds" (
     "name_year" VARCHAR(255)   NOT NULL
 );
 
-select * from hurricanes;
-select * from cost;
-select * from master;
-select name from master where master.name = 'Able';
-select * from fatalities;
-select * from maxwinds;
-select * from cost where damage_usd < 0;
+CREATE TABLE "cost_state" (
+    "state" VARCHAR(10)   NOT NULL,
+    "total_damage" INT   NOT NULL
+);
 
-drop table hurricanes;
-drop table cost;
-drop table master;
-drop table fatalities;
-drop table maxwinds;

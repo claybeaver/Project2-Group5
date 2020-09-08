@@ -52,3 +52,8 @@ maxwinds
 name VARCHAR(255)
 max_wind INT
 name_year VARCHAR(255)
+
+cost_state
+-
+state VARCHAR(10)
+total_damage INT

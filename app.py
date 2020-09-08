@@ -102,6 +102,32 @@ def maxwinds():
     return j
 
 # create route that renders index.html template
+@app.route("/cost_by_state")
+def cost_by_state():
+    # cursor.execute("select row_to_json(master) from master")
+    # rows = cursor.fetchall()
+    cursor.execute("select state, total_damage from cost_state")
+    rows = cursor.fetchall()
+    # print(rows)
+    # q = ("select row_to_json(master) from master")
+    # mySQL = db.executesql(q)
+    # return json.dumps(mySQL)
+    # # return 
+    objects_list = []
+    for row in rows:
+        d = collections.OrderedDict()
+        d['name'] = row[0]
+        d['total_damage'] = row[1]
+        objects_list.append(d)
+
+    j = json.dumps(objects_list)
+    objects_file = 'cost_by_state.js'
+    f = open(objects_file,'w')
+    # print(f, j)
+    # return render_template("jsondata.html", data=j)    
+    return j
+
+# create route that renders index.html template
 @app.route("/")
 def home():
     return render_template("index.html")
